@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JsonStorage\JsonStorage.csproj" />
+    <ProjectReference Include="..\Master\Master.csproj" />
+    <ProjectReference Include="..\PingCommandModule\PingCommandModule.csproj" />
+    <ProjectReference Include="..\QuestionList\QuestionList.csproj" />
+  </ItemGroup>
+
+</Project>
