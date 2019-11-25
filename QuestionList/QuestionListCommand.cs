@@ -23,6 +23,9 @@ namespace QuestionList
         public static List<QuestionInfo> Questions { get; }
 
         static ListHandler() {
+            if (!Directory.Exists("storage"))
+                Directory.CreateDirectory("storage");
+
             if (File.Exists(StoragePath))
                 Questions = JsonConvert.DeserializeObject<List<QuestionInfo>>(File.ReadAllText(StoragePath));
             else
